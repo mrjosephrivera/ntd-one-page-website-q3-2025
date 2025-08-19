@@ -1,7 +1,21 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { ArrowRight, CheckCircle, Users, Zap, Target, BarChart3, TrendingUp, Rocket, Facebook, Twitter, Linkedin, Instagram, Filter } from 'lucide-react'
+import {
+  ArrowRight,
+  CheckCircle,
+  Users,
+  Zap,
+  Target,
+  BarChart3,
+  TrendingUp,
+  Rocket,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+  Filter,
+} from "lucide-react"
 import Image from "next/image"
 
 export default function HomePage() {
@@ -44,7 +58,7 @@ export default function HomePage() {
               Real-world impact.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
-              {/* <CHANGE> Escaped quotes and apostrophes for ESLint compliance */}
+              {/* Escaped quotes and apostrophes for ESLint compliance */}
               Native Digi is a full‑service digital marketing agency that helps modern companies grow—faster and more
               predictably—by combining human strategy with practical AI. We plan, build, and optimize the end‑to‑end
               growth stack: brand, websites, content, SEO, media, and revenue automation.
@@ -84,7 +98,7 @@ export default function HomePage() {
               </p>
             </div>
             <div className="flex items-center justify-center">
-              {/* <CHANGE> Replaced img tag with Next.js Image component */}
+              {/* Replaced img tag with Next.js Image component */}
               <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/NTD-Subject-AI-chess-pieces-on-red-1024x1024-SGllPbvyGoaArfw50rZjGIeV8JfNVN.png"
                 alt="AI chess pieces representing strategic digital marketing"
@@ -214,10 +228,10 @@ export default function HomePage() {
             <Card className="border border-border bg-card p-8">
               <CardContent className="p-0">
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  {/* <CHANGE> Escaped quotes for ESLint compliance */}
-                  &quot;We&apos;ve seen remarkable results since integrating AI solutions from this company into our workflows.
-                  Their computer vision technology has enabled us to automate tasks and extract valuable insights from
-                  visual data.&quot;
+                  {/* Escaped quotes for ESLint compliance */}
+                  &quot;We&apos;ve seen remarkable results since integrating AI solutions from this company into our
+                  workflows. Their computer vision technology has enabled us to automate tasks and extract valuable
+                  insights from visual data.&quot;
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
@@ -237,10 +251,10 @@ export default function HomePage() {
             <Card className="border border-border bg-card p-8">
               <CardContent className="p-0">
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  {/* <CHANGE> Escaped quotes for ESLint compliance */}
-                  &quot;We&apos;ve seen remarkable results since integrating AI solutions from this company into our workflows.
-                  Their computer vision technology has enabled us to automate tasks and extract valuable insights from
-                  visual data.&quot;
+                  {/* Escaped quotes for ESLint compliance */}
+                  &quot;We&apos;ve seen remarkable results since integrating AI solutions from this company into our
+                  workflows. Their computer vision technology has enabled us to automate tasks and extract valuable
+                  insights from visual data.&quot;
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
@@ -357,7 +371,6 @@ export default function HomePage() {
             ].map((project, index) => (
               <a key={index} href={project.website} target="_blank" rel="noopener noreferrer" className="group block">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300">
-                  {/* <CHANGE> Replaced img tag with Next.js Image component */}
                   <Image
                     src={project.image || "/placeholder.svg"}
                     alt={`${project.title} project`}
@@ -375,8 +388,6 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-
-... existing code ...
 
       {/* Meet the Team Section */}
       <section className="py-20 px-4 bg-card">
@@ -425,7 +436,6 @@ export default function HomePage() {
               <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="relative mb-4">
-                    {/* <CHANGE> Replaced img tag with Next.js Image component */}
                     <Image
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
