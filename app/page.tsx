@@ -310,62 +310,62 @@ export default function HomePage() {
             {[
               {
                 title: "Caratoken",
-                image: "/placeholder-ig38a.png",
+                image: "/projects/placeholder-ig38a.png",
                 website: "https://caratoken.com",
               },
               {
                 title: "SingularityNET",
-                image: "/ai-network-platform-blue.png",
+                image: "/projects/ai-network-platform-blue.png",
                 website: "https://singularitynet.io",
               },
               {
                 title: "Block House",
-                image: "/blockchain-house-green.png",
+                image: "/projects/blockchain-house-green.png",
                 website: "https://blockhouse.com",
               },
               {
                 title: "SAIACONF",
-                image: "/ai-conference-colorful.png",
+                image: "/projects/ai-conference-colorful.png",
                 website: "https://saiaconf.com",
               },
               {
                 title: "NERD CONF",
-                image: "/tech-conference-crowd-indoor.png",
+                image: "/projects/tech-conference-crowd-indoor.png",
                 website: "https://nerdconf.com",
               },
               {
                 title: "WEB3MAKERS",
-                image: "/web3-makers-conference-audience.png",
+                image: "/projects/web3-makers-conference-audience.png",
                 website: "https://web3makers.com",
               },
               {
                 title: "TechFlow",
-                image: "/placeholder-ig38a.png",
+                image: "/projects/placeholder-ig38a.png",
                 website: "https://techflow.com",
               },
               {
                 title: "DataSync",
-                image: "/ai-network-platform-blue.png",
+                image: "/projects/ai-network-platform-blue.png",
                 website: "https://datasync.com",
               },
               {
                 title: "CloudVault",
-                image: "/blockchain-house-green.png",
+                image: "/projects/blockchain-house-green.png",
                 website: "https://cloudvault.com",
               },
               {
                 title: "AI Summit",
-                image: "/ai-conference-colorful.png",
+                image: "/projects/ai-conference-colorful.png",
                 website: "https://aisummit.com",
               },
               {
                 title: "DevCon",
-                image: "/tech-conference-crowd-indoor.png",
+                image: "/projects/tech-conference-crowd-indoor.png",
                 website: "https://devcon.com",
               },
               {
                 title: "CodeCraft",
-                image: "/web3-makers-conference-audience.png",
+                image: "/projects/web3-makers-conference-audience.png",
                 website: "https://codecraft.com",
               },
             ].map((project, index) => (
@@ -405,31 +405,31 @@ export default function HomePage() {
               {
                 name: "Sarah Chen",
                 role: "Founder & CEO",
-                image: "/professional-woman-dark-hair-smiling.png",
+                image: "/team/professional-woman-dark-hair-smiling.png",
                 bio: "15+ years in digital marketing strategy and AI implementation",
               },
               {
                 name: "Marcus Rodriguez",
                 role: "Head of Strategy",
-                image: "/professional-bearded-man.png",
+                image: "/team/professional-bearded-man.png",
                 bio: "Former McKinsey consultant specializing in growth marketing",
               },
               {
                 name: "Emily Watson",
                 role: "Creative Director",
-                image: "/blonde-creative-professional.png",
+                image: "/team/blonde-creative-professional.png",
                 bio: "Award-winning designer with expertise in conversion optimization",
               },
               {
                 name: "David Kim",
                 role: "Technical Lead",
-                image: "/asian-tech-professional.png",
+                image: "/team/asian-tech-professional.png",
                 bio: "Full-stack developer and AI automation specialist",
               },
               {
                 name: "Lisa Thompson",
                 role: "Client Success",
-                image: "/smiling-redhead-professional.png",
+                image: "/team/smiling-redhead-professional.png",
                 bio: "Dedicated to ensuring every client achieves their growth goals",
               },
             ].map((member, index) => (
