@@ -1,21 +1,8 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import {
-  ArrowRight,
-  CheckCircle,
-  Users,
-  Zap,
-  Target,
-  BarChart3,
-  TrendingUp,
-  Rocket,
-  Facebook,
-  Twitter,
-  Linkedin,
-  Instagram,
-  Filter,
-} from "lucide-react"
+import { ArrowRight, CheckCircle, Users, Zap, Target, BarChart3, TrendingUp, Rocket, Facebook, Twitter, Linkedin, Instagram, Filter } from 'lucide-react'
+import Image from "next/image"
 
 export default function HomePage() {
   return (
@@ -57,6 +44,7 @@ export default function HomePage() {
               Real-world impact.
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-2xl">
+              {/* <CHANGE> Escaped quotes and apostrophes for ESLint compliance */}
               Native Digi is a full‑service digital marketing agency that helps modern companies grow—faster and more
               predictably—by combining human strategy with practical AI. We plan, build, and optimize the end‑to‑end
               growth stack: brand, websites, content, SEO, media, and revenue automation.
@@ -92,13 +80,16 @@ export default function HomePage() {
               </h2>
               <p className="text-xl text-muted-foreground">
                 We design solutions that take your biggest frustrations and turn them into your biggest wins, all while{" "}
-                <strong>delivering the ROI you've been looking for.</strong>
+                <strong>delivering the ROI you&apos;ve been looking for.</strong>
               </p>
             </div>
             <div className="flex items-center justify-center">
-              <img
+              {/* <CHANGE> Replaced img tag with Next.js Image component */}
+              <Image
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/NTD-Subject-AI-chess-pieces-on-red-1024x1024-SGllPbvyGoaArfw50rZjGIeV8JfNVN.png"
                 alt="AI chess pieces representing strategic digital marketing"
+                width={400}
+                height={400}
                 className="w-full max-w-md object-contain"
               />
             </div>
@@ -111,13 +102,13 @@ export default function HomePage() {
                 pretitle: "Strategy & Foundations",
                 title: "Get Your House in Order",
                 description:
-                  "Before we build anything, let's figure out what you actually need and where you're going.",
+                  "Before we build anything, let&apos;s figure out what you actually need and where you&apos;re going.",
                 bullets: [
                   "Figure out your digital strategy (no more throwing stuff at the wall)",
                   "Get you ready for AI (practical stuff, not sci-fi dreams)",
                   "Nail your brand messaging (so people actually get what you do)",
                   "Set up tracking that makes sense (goodbye, data black holes)",
-                  "Build you a roadmap with real milestones (not just 'increase awareness by 50%')",
+                  "Build you a roadmap with real milestones (not just &quot;increase awareness by 50%&quot;)",
                 ],
               },
               {
@@ -129,8 +120,8 @@ export default function HomePage() {
                   "Design websites that convert (every page has a job to do)",
                   "Write copy that people actually want to read",
                   "Build sites that load fast and work on phones",
-                  "Create landing pages that don't suck",
-                  "Test everything (because hunches don't pay the bills)",
+                  "Create landing pages that don&apos;t suck",
+                  "Test everything (because hunches don&apos;t pay the bills)",
                 ],
               },
               {
@@ -141,7 +132,7 @@ export default function HomePage() {
                 bullets: [
                   "SEO that actually works (not just keyword stuffing)",
                   "Content marketing that people share",
-                  "Social media that doesn't feel like shouting into the void",
+                  "Social media that doesn&apos;t feel like shouting into the void",
                   "Paid ads that generate real customers (not just clicks)",
                   "Partner with influencers who actually influence your audience",
                 ],
@@ -163,7 +154,7 @@ export default function HomePage() {
                 icon: <Users className="h-8 w-8" />,
                 pretitle: "Reputation & Advocacy",
                 title: "Turn Customers into Your Marketing Team",
-                description: "Happy customers are your best marketing channel—let's make them work for you.",
+                description: "Happy customers are your best marketing channel—let&apos;s make them work for you.",
                 bullets: [
                   "Get you more reviews (the good kind)",
                   "Manage your reputation (before problems become PR nightmares)",
@@ -223,9 +214,10 @@ export default function HomePage() {
             <Card className="border border-border bg-card p-8">
               <CardContent className="p-0">
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  "We've seen remarkable results since integrating AI solutions from this company into our workflows.
+                  {/* <CHANGE> Escaped quotes for ESLint compliance */}
+                  &quot;We&apos;ve seen remarkable results since integrating AI solutions from this company into our workflows.
                   Their computer vision technology has enabled us to automate tasks and extract valuable insights from
-                  visual data."
+                  visual data.&quot;
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
@@ -245,9 +237,10 @@ export default function HomePage() {
             <Card className="border border-border bg-card p-8">
               <CardContent className="p-0">
                 <p className="text-lg text-foreground mb-8 leading-relaxed">
-                  "We've seen remarkable results since integrating AI solutions from this company into our workflows.
+                  {/* <CHANGE> Escaped quotes for ESLint compliance */}
+                  &quot;We&apos;ve seen remarkable results since integrating AI solutions from this company into our workflows.
                   Their computer vision technology has enabled us to automate tasks and extract valuable insights from
-                  visual data."
+                  visual data.&quot;
                 </p>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-4">
@@ -273,7 +266,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Recent Project Results</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Real outcomes from real clients. Here's what happens when strategy, execution, and technology work
+              Real outcomes from real clients. Here&apos;s what happens when strategy, execution, and technology work
               together.
             </p>
           </div>
@@ -364,9 +357,12 @@ export default function HomePage() {
             ].map((project, index) => (
               <a key={index} href={project.website} target="_blank" rel="noopener noreferrer" className="group block">
                 <div className="relative aspect-[4/3] rounded-xl overflow-hidden hover:scale-105 transition-transform duration-300">
-                  <img
+                  {/* <CHANGE> Replaced img tag with Next.js Image component */}
+                  <Image
                     src={project.image || "/placeholder.svg"}
                     alt={`${project.title} project`}
+                    width={400}
+                    height={300}
                     className="w-full h-full object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
@@ -380,76 +376,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Process Section */}
-      <section id="process" className="py-20 px-4 bg-background">
-        <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Our Process</h2>
-            <p className="text-xl text-muted-foreground">
-              A proven methodology that transforms fragmented marketing into integrated growth systems.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-4 gap-8">
-            {[
-              {
-                step: "01",
-                title: "Discover & Plan",
-                description:
-                  "We analyze your current marketing, identify opportunities, and create a clear roadmap for growth.",
-                timeline: "Week 1-2",
-              },
-              {
-                step: "02",
-                title: "Build & Connect",
-                description: "We set up the essential systems and tools that will power your marketing engine.",
-                timeline: "Week 3-6",
-              },
-              {
-                step: "03",
-                title: "Launch & Integrate",
-                description: "We activate coordinated campaigns across all channels with unified messaging.",
-                timeline: "Week 7-10",
-              },
-              {
-                step: "04",
-                title: "Measure & Scale",
-                description: "We continuously test, improve, and scale based on real performance data.",
-                timeline: "Ongoing",
-              },
-            ].map((phase, index) => (
-              <Card
-                key={index}
-                className="relative border-primary/20 hover:border-primary/40 transition-all duration-300"
-              >
-                <CardHeader>
-                  <div className="text-4xl font-bold text-primary/20 mb-2">{phase.step}</div>
-                  <CardTitle className="text-xl mb-2">{phase.title}</CardTitle>
-                  <Badge variant="secondary" className="w-fit text-xs">
-                    {phase.timeline}
-                  </Badge>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{phase.description}</p>
-                </CardContent>
-                {index < 3 && (
-                  <div className="hidden lg:block absolute top-1/2 -right-4 transform -translate-y-1/2">
-                    <ArrowRight className="h-6 w-6 text-primary/30" />
-                  </div>
-                )}
-              </Card>
-            ))}
-          </div>
-
-          <div className="text-center mt-12">
-            <h3 className="text-2xl font-bold text-primary mb-4">The Result: Predictable Growth</h3>
-            <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Each phase builds momentum that accelerates over time. Our approach ensures you can scale attention,
-              trust, and revenue without increasing complexity.
-            </p>
-          </div>
-        </div>
-      </section>
+... existing code ...
 
       {/* Meet the Team Section */}
       <section className="py-20 px-4 bg-card">
@@ -498,9 +425,12 @@ export default function HomePage() {
               <Card key={index} className="text-center group hover:shadow-lg transition-all duration-300">
                 <CardContent className="p-6">
                   <div className="relative mb-4">
-                    <img
+                    {/* <CHANGE> Replaced img tag with Next.js Image component */}
+                    <Image
                       src={member.image || "/placeholder.svg"}
                       alt={member.name}
+                      width={96}
+                      height={96}
                       className="w-24 h-24 rounded-full mx-auto object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                   </div>
@@ -520,7 +450,7 @@ export default function HomePage() {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">Why Work With Us</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Here's what makes working with us different from other agencies and why our clients stick around.
+              Here&apos;s what makes working with us different from other agencies and why our clients stick around.
             </p>
           </div>
 
@@ -548,19 +478,19 @@ export default function HomePage() {
                 icon: <Target className="h-8 w-8" />,
                 title: "Leads That Actually Convert",
                 description:
-                  "We don't just drive traffic—we bring you people who are ready to buy what you're selling.",
+                  "We don&apos;t just drive traffic—we bring you people who are ready to buy what you&apos;re selling.",
               },
               {
                 icon: <TrendingUp className="h-8 w-8" />,
-                title: "You'll Know What's Working",
+                title: "You&apos;ll Know What&apos;s Working",
                 description:
-                  "Clear reporting that shows exactly where your money is going and what results you're getting.",
+                  "Clear reporting that shows exactly where your money is going and what results you&apos;re getting.",
               },
               {
                 icon: <Rocket className="h-8 w-8" />,
                 title: "We Move Fast",
                 description:
-                  "No six-month strategy phases. We start getting you results while we're building the bigger picture.",
+                  "No six-month strategy phases. We start getting you results while we&apos;re building the bigger picture.",
               },
             ].map((solution, index) => (
               <Card
@@ -590,8 +520,8 @@ export default function HomePage() {
             <div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
               <p className="text-xl text-muted-foreground mb-8">
-                Let's discuss how we can transform your marketing from fragmented to integrated using our AI‑first
-                approach. Fill out the form and we'll get back to you within 24 hours.
+                Let&apos;s discuss how we can transform your marketing from fragmented to integrated using our AI‑first
+                approach. Fill out the form and we&apos;ll get back to you within 24 hours.
               </p>
 
               <div className="space-y-6">
@@ -694,11 +624,11 @@ export default function HomePage() {
                       </label>
                       <div className="space-y-3">
                         {[
-                          "I'm not getting enough quality leads",
-                          "My website isn't converting visitors into customers",
-                          "My content isn't bringing in the right people",
-                          "I'm losing leads because my follow-up is inconsistent",
-                          "My paid ads aren't generating real customers",
+                          "I&apos;m not getting enough quality leads",
+                          "My website isn&apos;t converting visitors into customers",
+                          "My content isn&apos;t bringing in the right people",
+                          "I&apos;m losing leads because my follow-up is inconsistent",
+                          "My paid ads aren&apos;t generating real customers",
                           "My social media feels like shouting into the void",
                         ].map((challenge, index) => (
                           <div key={index} className="flex items-start gap-3">
